@@ -1,0 +1,19 @@
+.frame {
+  width: 400px;
+  height: 300px;
+  background-color: rgb(245 214 180);
+  display: grid;
+  grid-template-columns: 200px 200px;
+}
+
+.c {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: rgb(216 111 69);
+}
+
+.ab {
+    display: flex;
+    align-items: end;
+}
