@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        background: #e3d751;
+        display: grid;
+        place-items: center;
+        position: relative;
+        height: 300px;
+        width: 400px;
+      }
+      .w {
+        grid-gap: 0;
+        position: absolute;
+        justify-items: center;
+        align-items: center;
+        width: 200px;
+        height: 200px;
+        grid-template-columns: repeat(2, 100px);
+        grid-template-rows: repeat(2, 100px);
+      }
+      .c {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background: #3ea354;
+      }
+      .r{
+        width: 150px;
+        height: 150px;
+        transform: rotate(45deg);
+      }
+      .r::after{
+        content: '';
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        border-radius: 20px;
+        background: #3EA354;
+        transform: rotate(45deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="w">
+        <div class="c"></div>
+        <div class="c"></div>
+        <div class="c"></div>
+        <div class="c"></div>
+      </div>
+    <div class="r"></div>
+    </div>
+  </body>
+</html>
