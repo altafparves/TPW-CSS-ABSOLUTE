@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+        display: grid;
+        place-items: center;
+        position: relative;
+        width: 400px;
+        background: #1A4341;
+        height: 300px;
+      }
+      .bc::before{
+        content:'';
+        position: absolute;
+        width:30px;
+        height:30px;
+        left: 41px;
+        top: 40px;
+        border-radius:50% ;
+        background:#0C2429 ;
+      }
+      .bc{
+        border-radius: 50%;
+        background:#F3AC3D;
+        height: 200px;
+        width: 200px;
+      }
+      .bc::after{
+        content: '';
+        width: 142px;
+        height: 142px;
+        position: absolute;
+        left: 120px;
+        transform: rotate(45deg);
+        background-color:#1A4341 ;
+      }
+      .w{
+        height: 30px;
+        display: flex;
+        flex-direction: row;
+        gap: 14px;
+        margin-right: 35px;
+        width: fit-content;
+        right: 0;
+        position: absolute;
+      }
+      .c{
+        width:30px;
+        height:30px;
+        border-radius: 50%;
+        background: #9E8139;
+      }
+
+    </style>
+</head>
+<body>
+    <div>
+        <div class="bc"></div>
+        <div class="w">
+        <div class="c"></div>
+        <div class="c"></div>
+        <div class="c"></div>
+    </div>
+    </div>
+    
+</body>
+</html>
