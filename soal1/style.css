@@ -1,0 +1,107 @@
+.frame {
+  width: 400px;
+  height: 300px;
+  background: #E3516E;
+}
+
+.cy {
+  background: #FADE8D;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(5, 40px);
+  grid-template-rows: repeat(5, 40px);
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.board div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.diagonalLeft {
+  transform: rotate(45deg);
+}
+
+.diagonalRight {
+  transform: rotate(-45deg);
+}
+
+.rv {
+  width: 14px;
+  height: 40px;
+  background: #E3516E;
+}
+
+.rh {
+  width: 40px;
+  height: 14px;
+  background: #E3516E;
+}
+
+.yr {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #FADE8D;
+}
+
+.midSquare {
+  width: 14px;
+  height: 14px;
+  background: #E3516E;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.crossRight {
+  top: 50%;
+  left: 25%;
+}
+
+.crossLeft {
+  right: 25%;
+}
+
+.ocb {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 2px solid #E3516E;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sc {
+  background: #E3516E;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.rl {
+    width: 14px;
+    height: 28px;
+    background: #E3516E;
+}
+
+.gapThree {
+    column-gap: 3px;
+}
+
+.rr {
+    width: 14px;
+    height: 14px;
+    background: #E3516E;
+}
