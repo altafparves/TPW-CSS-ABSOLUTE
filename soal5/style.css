@@ -1,0 +1,25 @@
+.frame {
+    box-sizing: border-box;
+    width: 400px;
+    height: 300px;
+    display: grid;
+    grid-template-rows: 100px 100px 100px;
+    position: relative;
+    background:#fff;
+    border-top:100px solid #000;
+    border-bottom:100px solid #009639;
+}
+
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: transparent;
+    position: absolute;
+    margin-top:-100px;
+    border-left-color: rgb(237 46 56);
+    border-width: 150px 0 150px 200px;
+    border-left-color: rgb(237 46 56);
+    border-width: 150px 0 150px 200px;
+}
