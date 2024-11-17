@@ -1,0 +1,195 @@
+.frame {
+  width: 400px;
+  height: 300px;
+  background: rgb(255 255 255);
+  display: grid;
+  border: 1px solid black;
+  grid-template-columns: 60px 40px 45px auto 45px 45px 60px;
+}
+
+.flex {
+  display: flex;
+}
+
+.downContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: end;
+}
+
+.blackSquare {
+  background: rgb(46 46 46);
+  width: var(--BSwidth);
+  height: var(--BSheight);
+}
+
+.BS {
+  --BSwidth: 60px;
+  --BSheight: 60px;
+}
+
+.RRF {
+  background: rgb(214 35 64);
+  width: var(--RRFwidth);
+  height: var(--RRFheight);
+  margin-left: 15px;
+}
+
+.RRFup {
+  --RRFwidth: 25px;
+  --RRFheight: 20px;
+}
+
+.RRFdown {
+  --RRFwidth: 40px;
+  --RRFheight: 15px;
+  margin-right: 5px;
+}
+
+.RRT {
+  background: rgb(214 35 64);
+  width: var(--RRTwidth);
+  height: var(--RRTheight);
+}
+
+.RRTup {
+  --RRTwidth: 12px;
+  --RRTheight: 24px;
+}
+
+.RRTdown {
+  --RRTwidth: 20px;
+  --RRTheight: 20px;
+  position: relative;
+}
+
+.RRTdown div {
+  position: absolute;
+  bottom: 0;
+  transform: translateX(-15px);
+}
+
+.QDRB {
+  width: var(--QDRBsize);
+  height: var(--QDRBsize);
+  background: rgb(214 35 64);
+  clip-path: circle(100% at top right);
+  position: relative;
+}
+
+.QDRBup {
+  --QDRBsize: 48px;
+}
+
+.QDRBdown {
+  --QDRBsize: 45px;
+}
+
+.QDRB::after {
+  width: calc(0.5 * var(--QDRBsize));
+  height: calc(0.5 * var(--QDRBsize));
+  background: rgb(255 255 255);
+  clip-path: circle(100% at top right);
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+}
+
+.QDRM {
+  width: var(--QDRMsize);
+  height: var(--QDRMsize);
+  background: rgb(214 35 64);
+  clip-path: circle(100% at bottom right);
+  position: relative;
+}
+
+.QDRMup {
+  --QDRMsize: 40px;
+}
+
+.QDRMdown {
+  --QDRMsize: 45px;
+}
+
+.QDRM::after {
+  width: calc(0.5 * var(--QDRMsize));
+  height: calc(0.5 * var(--QDRMsize));
+  background: rgb(255 255 255);
+  clip-path: circle(100% at bottom right);
+  position: absolute;
+  content: "";
+  bottom: 0;
+  right: 0;
+}
+
+.QDRB::after {
+  width: 24px;
+  height: 24px;
+  background: rgb(255 255 255);
+  clip-path: circle(100% at top right);
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+}
+
+.QDBM {
+  width: var(--QDRMsize);
+  height: var(--QDRMsize);
+  background: rgb(46 46 46);
+  clip-path: circle(100% at bottom left);
+  position: relative;
+}
+
+.QDBM::after {
+  width: calc(0.5 * var(--QDRMsize));
+  height: calc(0.5 * var(--QDRMsize));
+  background: rgb(255 255 255);
+  clip-path: circle(100% at bottom left);
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+}
+
+.redSquare {
+  width: var(--RSsize);
+  height: var(--RSsize);
+  background: rgb(229 53 82);
+}
+
+.RSup {
+    --RSsize: 40px;
+}
+
+.RSdown {
+    --RSsize: 45px;
+    margin-bottom: 15px;
+}
+
+.QBS {
+  width: 45px;
+  height: 45px;
+  background: rgb(46 46 46);
+  clip-path: circle(100% at top right);
+}
+
+.RSD {
+  width: 45px;
+  height: 45px;
+  background: rgb(214 35 64);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.RSD::after {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  background: rgb(255 255 255);
+}
