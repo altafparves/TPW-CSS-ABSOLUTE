@@ -1,0 +1,36 @@
+.frame {
+  background: rgb(0 0 0);
+  width: 400px;
+  height: 300px;
+  display:grid;
+  place-items: center;
+}
+
+.c {
+  background: linear-gradient(#EE2323 70px, #000 70px, #000 80px,  #FFFFFF 80px);
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  position: relative;
+}
+
+.bo {
+  background: rgb(0 0 0);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: relative;
+  transform: translate(51px, 52.5px);
+  z-index: 30;
+}
+
+.bo::after {
+  content:'';
+  background: #A9A9A9;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(10px, 10px);
+  z-index: 50;
+}
