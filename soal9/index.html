@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+        background: #51BCE3;
+        display: grid;
+        place-items: center;
+        position: relative;
+        width: 400px;
+        height: 300px;
+      }
+      .c{
+            border-radius: 50%;
+            width: 180px;
+            height: 180px;
+            position: absolute;
+            background: #1A2140;
+      }
+      .l{
+        height: 240px;
+        width:42px ;
+        border-radius: 14px;
+        background:#1A2140 ;
+        position: absolute;
+      }
+        .l:nth-child(2){
+            transform: rotate(90deg);
+        }
+        .l:nth-child(3){
+            transform: rotate(45deg);
+        }
+        .l:nth-child(4){
+            transform: rotate(135deg);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="c"></div>
+        <div class="l"></div>
+        <div class="l"></div>
+        <div class="l"></div>
+        <div class="l"></div>
+    </div>
+</body>
+</html>
