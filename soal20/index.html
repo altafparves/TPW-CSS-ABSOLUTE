@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .frame{
+            width: 400px;
+            height: 300px;
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            background:#fff;
+        }
+        .bb{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+        .bbo{
+            position: relative;
+            background-color:#1A7ABF;
+        }
+        .bbi{
+            position: absolute;
+            bottom: -15px;
+            background: #fff;;
+        }
+        .ws{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            position: absolute;
+            bottom: 108px;
+            justify-content: space-between;
+        }
+        .l{
+            width: 102px;
+            height: 6px;
+            background: #1A7ABF;
+        }
+        .b{
+            position: relative;
+            width:50px;
+            height: 50px;
+            background: #1A7ABF;
+            border-radius: 50%;
+        }
+        .b::after{
+            content: '';
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background: #fff;
+            border-radius: 50%;
+            top: 5px;
+        }
+        .bl::after{
+            left: 0;
+        }
+        .br::after{
+            right: 0;
+        }
+    </style>
+</head>
+<body style="background: brown;">
+    <div class="frame">
+        <div class="bbo bb">
+            <div class="bbi bb"></div>
+        </div>
+        <div class="bbo bb">
+            <div class="bbi bb"></div>
+        </div>
+        <div class="ws">
+            <div class="b bl"></div>
+            <div class="l"></div>
+            <div class="b br"></div>
+        </div>
+    </div>
+</body>
+</html>
