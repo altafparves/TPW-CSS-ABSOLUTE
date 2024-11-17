@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+      }
+      div {
+        background: #4fa07c;
+        display: grid;
+        place-items: center;
+        position: relative;
+        width: 400px;
+        height: 300px;
+      }
+      .c {
+        border: 10px solid #0c1432;
+        border-radius: 50%;
+      }
+      .i {
+        width: 210px;
+        height: 210px;
+      }
+      .i::after {
+        content: "";
+        width: 100px;
+        height: 100px;
+        border: 10px solid #0c1432;
+        border-radius: 50%;
+      }
+      .o {
+        width: 250px;
+        height: 250px;
+      }
+      h1 {
+        --b: 20px;
+        position: absolute;
+        width: 215px;
+        aspect-ratio: 1 / cos(30deg);
+        clip-path: polygon(50% 0, 100% 100%, 0 100%, 50% 0, 50% var(--b), calc(var(--b) * cos(30deg)) calc(100% - var(--b) / 2), calc(100% - var(--b) * cos(30deg)) calc(100% - var(--b) / 2), 50% var(--b));
+        background: #f9fae8;
+      }
+      .t{
+           bottom: 0;
+
+      }
+      .b{
+        rotate: 180deg;
+        top: 0;
+      }
+      .r{
+        --b: 20px;
+        right: 5px;
+        top: 10px;
+        width: 175px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="o c">
+        <div class="i c"></div>
+      </div>
+      <h1 class="t"></h1>
+      <h1 class="b"></h1>
+      <h1 class="r"></h1>
+    </div>
+  </body>
+</html>
