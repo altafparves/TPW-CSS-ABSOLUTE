@@ -1,0 +1,90 @@
+.frame {
+  width: 400px;
+  height: 300px;
+  background: rgb(41 51 98);
+  display: grid;
+  grid-template-rows: 200px 100px;
+}
+
+.dhc {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.frc {
+  background: rgb(255 241 193);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.st {
+  width: 100px;
+  height: 100px;
+  clip-path: polygon(
+    50% 0,
+    calc(50% * (1 + sin(0.4turn))) calc(50% * (1 - cos(0.4turn))),
+    calc(50% * (1 - sin(0.2turn))) calc(50% * (1 - cos(0.2turn))),
+    calc(50% * (1 + sin(0.2turn))) calc(50% * (1 - cos(0.2turn))),
+    calc(50% * (1 - sin(0.4turn))) calc(50% * (1 - cos(0.4turn)))
+  );
+}
+
+.tfl {
+  width: 85px;
+  height: 85px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.tft {
+  width: 85px;
+  height: 85px;
+  display: flex;
+  justify-content: center;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-right: 37px solid transparent;
+  border-left: 37px solid transparent;
+  border-bottom: 64px solid rgb(41 51 98);
+}
+
+.blue {
+  background: rgb(41 51 98);
+}
+
+.pink {
+  background: rgb(227 81 110);
+}
+
+.ob {
+  background: rgb(254 96 86);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.dobr {
+  background: rgb(166 73 66);
+  width: 50px;
+  height: 100px;
+  position: absolute;
+  right: 0%;
+}
+
+.dobb {
+  background: rgb(166 73 66);
+  width: 100px;
+  height: 50px;
+  position: absolute;
+  bottom: 0%;
+}
+
+.rotate90 {
+  transform: rotate(-90deg);
+}
