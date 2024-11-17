@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOAL 14</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .f{
+            width: 400px;
+            height: 300px;
+            background: #FFF;
+            display: grid;
+            place-items: center;
+            position: relative;
+        }
+        .w{
+            width: 200px;
+            height: 200px;
+            background: linear-gradient(#D52440, #B32533);
+            border-radius: 58px;
+            position: relative;
+            display: grid;
+            place-items: center;
+        }
+        .l{
+            position: absolute;
+            background: #fff;
+            width: 61.6px;
+            display: grid;
+            z-index: 20;
+            place-items: center;
+            color: #D52440;
+            font-size: 30px !important;
+            font-family: sans-serif;
+            font-weight: 700;
+            height: 61.6px;
+            border-radius: 50%;
+
+            border: 10px solid linear-gradient(#B32533, #D52440)
+        }
+
+
+        .la {
+            content: "";
+            position: absolute;
+            background: linear-gradient(#D52440, #B32533);
+            width: 76.6px;
+            height: 76.6px;
+            z-index: 10;
+            border-radius: 50%
+        }
+
+        
+        .t{
+ width: 60px;
+  aspect-ratio: 1;
+  position: absolute;
+  z-index: 1;
+  background:#fff;
+        }
+        .tl{  
+  left: 0;
+  bottom: 30px;
+  rotate: -30deg;
+  transform: translate(27px, -20px);
+  clip-path: polygon(0 100%,100% 0,100% 100%);
+
+
+        }
+        .tr{
+            right: 0;
+            rotate: 65deg;
+  clip-path: polygon(0 100%,0 0,100% 100%);
+        }
+
+        .crc {
+            position: absolute;
+            top: 50%;
+            background: #FFF;
+        }
+
+        .crc1 {
+            width: 80px;
+            height: 80px;
+            transform: translate(-15px,-18px);
+            border-radius: 50%;
+        }
+
+        .crc2 {
+            width: 100px;
+            height: 50px;
+            transform: translate(20px, -60px);
+            border-radius: 50px 50px 0 0;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="f">
+        <div class="w">
+            <div class="t tl"></div>
+            <div class="t tr"></div>
+            <div class="crc crc1"></div>
+            <div class="crc crc2"></div>
+            <div class="la"></div>
+            <div class="l">NL</div>
+
+        </div>
+    </div>
+</body>
+</html>
