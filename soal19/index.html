@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        width: 400px;
+        height: 300px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background:#9A8235;
+        justify-content: center;
+      }
+      .b{
+        width: 80px;
+        height: 180px;
+        border-radius: 50px;
+        position: relative ;
+       background:linear-gradient(
+        to top, 
+        #000 0px,
+        #000 40px,
+        #EDF43E 40px, 
+        #EDF43E 100%
+    ) ;
+    }
+    .b::after{
+      content: '';
+      width: 10px;
+      height: 10px;
+      top: 23px;
+      right: 20px;
+      background: #000;
+      border-radius: 50%;
+      position: absolute;
+    }
+
+    .b::before{
+      content: '';
+      width: 10px;
+      height: 10px;
+      top: 23px;
+      left: 20px;
+      background: #000;
+      border-radius: 50%;
+      position: absolute;
+    }
+    .g{
+      width: 100%;
+      position: absolute;
+      bottom: 45px;
+      height:fit-content;
+      display: flex;
+      background: #EDF43E;
+      flex-direction: column;
+      gap: 5px;
+    }
+    .s{
+      width: 100%;
+      height: 14px;
+      background: #000;
+    }
+
+    .wg{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    position: relative;
+    }
+    .r{
+      position: absolute;
+      width: 45px;
+      height: 85px;
+      background: #fff;
+      right: 0;
+    }
+    .rr{
+      left: 0;
+    }
+    .w{
+      width:80px;
+      height: 80px;
+      background: #fff;
+      border-radius:50% ;
+    }
+      
+      
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="wg">
+        <div class="r"></div>
+        <div class="w"></div>
+        <div class="w"></div>
+      </div>
+      <div class="b">
+        <div class="g">
+          <div class="s"></div>
+          <div class="s"></div>
+          <div class="s"></div>
+          <div class="s"></div>
+        </div>
+      </div>
+      <div class="wg">
+        <div class="r rr"></div>
+        <div class="w"></div>
+        <div class="w"></div>
+      </div>
+    </div>
+  </body>
+</html>
